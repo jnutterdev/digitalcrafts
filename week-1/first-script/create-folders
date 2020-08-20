@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# make directory for first-scripts
+mkdir first-script
+
+# switch to first-script folder
+cd first-script
+
+# create hello-world-script
+touch hello-world-script
+
+# add content to hello-world-script
+echo "#!/bin/bash
+echo 'Hello world!'" > hello-world-script
+
+# change file permissions
+chmod u+x hello-world-script
+
+# run script by typing ./hello-world-script
