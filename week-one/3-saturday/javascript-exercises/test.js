@@ -1,12 +1,16 @@
-let width = 5;
-let height = 6;
-
-let boxTop = "#".repeat(width);
-let boxLSide = boxTop.charAt(0);
-let boxMid = "";
-let boxRSide = boxTop.charAt(boxTop);
-
-for (i = 1; i < boxTop; i++) {
-    let boxMid = boxTop.replace("#", " ");
-    console.log(boxMid);
+function printBox(boxWidth, boxHeight) {
+    for (i = 0; i <= boxWidth; i++) {
+        for (j = 0; j <= boxHeight; j++) {
+            console.log("*");
+            if (i == 0 || i == boxWidth ||
+                j == 0 || j == boxHeight) {
+                console.log("*");
+            } else {
+                console.log(" ");
+            }
+        }
+        console.log("\n");
+    }
 }
+
+printBox(3, 3);
