@@ -1,6 +1,6 @@
 function printSquare(sizeOfBox) {
     for (i = 1; i <= sizeOfBox; i++) {
-        console.log("*".repeat(sizeOfBox));
+        console.log("*".repeat(sizeOfBox + 4));
     }
 }
 
