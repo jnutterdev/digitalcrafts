@@ -1,5 +1,5 @@
 function marinaraSauce(cookName) {
-    var two = 2,
+    let two = 2,
         oneFourth = "1/4";
 
     console.log(`Hey, ${cookName}! This is my marinara sauce recipe!`);
