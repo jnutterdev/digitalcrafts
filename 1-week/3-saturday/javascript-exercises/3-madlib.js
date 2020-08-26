@@ -1,4 +1,4 @@
-function madlib(name = 'Student', subject = 'Favorite Class') {
+function madlib(name = 'Noun', subject = 'Noun') {
     console.log(`${name}'s favorite subject in school is ${subject}!`)
 }
 
