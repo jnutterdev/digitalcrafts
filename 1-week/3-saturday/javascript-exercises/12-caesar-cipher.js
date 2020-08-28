@@ -1,15 +1,8 @@
 // Caesar Cipher
 
-function caesarCipher(input, offset) {
-    let charset = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-    for (i = 0; i <= charset.length; i++) {
-        for (j = offset; j <= 52; j++) {
-            let encodedText = input.toUpperCase();
-            console.log(encodedText);
-        }
-    }
-
-
+function caesarCipher(input, key) {
+    return input.toUpperCase().replace(/[A-Z]/g,
+        c => String.fromCharCode((c.charCodeAt(0) - 65 + key) % 26 + 65));
 }
 
-caesarCipher("Some text", 3);
+console.log(caesarCipher('Some random text', 4))
