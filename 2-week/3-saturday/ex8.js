@@ -16,12 +16,9 @@ var people = [
     'Ben'
 ];
 
-function arrLength(arr) {
-    people.forEach(function(element) {
-        arr.sort(a, b);
-        console.log(a.length - b.length);
-    });
-}
+var pplSort = people.sort(function(a, b) {
+    console.log(a, b);
+    return a.length - b.length;
+});
 
-
-arrLength(people);
+console.log(pplSort);

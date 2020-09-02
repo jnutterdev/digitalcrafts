@@ -10,4 +10,5 @@ function returnCoolCities(arr) {
         return element.temperature < 70;
     });
 }
+
 console.log(returnCoolCities(cities));
