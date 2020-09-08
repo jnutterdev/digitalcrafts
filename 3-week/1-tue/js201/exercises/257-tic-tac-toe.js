@@ -23,3 +23,28 @@
 //   [null, 'X', 'X']
 //   ])
 // null
+
+
+//ticTacToe
+var board = (
+    ['', '', ''], ['', '', ''], ['', '', '']);
+
+function ticTacToe(arr) {
+    //check to see if X is equal to all 8 winning conditions
+    if (board[0][0] == "X" && board[0][1] == "X" && board[0][2] == "X") {
+        return "X";
+    } else if (board[0][0] == "X" && board[1][0] == "X" && board[2][0] == "X") {
+        return "X";
+    } else if (board[0][1] == "X" && board[1][1] == "X" && board[2][1] == "X") {
+        return "X";
+    } else if (board[0][2] == "X" && board[1][2] == "X" && board[2][2] == "X") {
+        return "X";
+    } else if (board[1][0] == "X" && board[1][1] == "X" && board[1][2] == "X") {
+        return "X";
+    } else if (board[2][0] == "X" && board[2][1] == "X" && board[2][2] == "X") {
+        return "X";
+    } else if (board[0][2] == "X" && board[1][1] == "X" && board[2][0] == "X") {
+        return "X";
+    } else if (board[0][2] == "X" && board[1][2] == "X" && board[2][])
+}
+console.log(ticTacToe(['X', 'X', 'X'], ['O', 'X', 'X'], ['X', 'O', 'X'], ));

@@ -5,4 +5,4 @@ function caesarCipher(input, key) {
         c => String.fromCharCode((c.charCodeAt(0) - 65 + key) % 26 + 65));
 }
 
-console.log(caesarCipher('Some random text', 4))
+console.log(caesarCipher('Some text', 2))

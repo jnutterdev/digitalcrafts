@@ -20,7 +20,17 @@
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
 
+// const vowel = /[aeiouy]/;
 
+isVowel = (input) => {
+    if (input.search(/^[aeiouy]/i)) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(isVowel("a"));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write two functions: "isEven" and "isOdd" that take a number argument and
